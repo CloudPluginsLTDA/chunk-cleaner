@@ -54,7 +54,7 @@
             <artifactId>factions</artifactId>
             <version>1.0.0</version>
             <scope>system</scope>
-            <systemPath>E:/JARS/Mambafac.jar</systemPath>
+            <systemPath>C:/Users/ymrca/IdeaProjects/chunk-cleaner/libs/Factions.jar</systemPath>
         </dependency>
 
         <dependency>
@@ -62,7 +62,7 @@
             <artifactId>massivecore</artifactId>
             <version>1.0.0</version>
             <scope>system</scope>
-            <systemPath>E:/JARS/MambaMassiveCore.jar</systemPath>
+            <systemPath>C:/Users/ymrca/IdeaProjects/chunk-cleaner/libs/MassiveCore.jar</systemPath>
         </dependency>
 
     </dependencies>

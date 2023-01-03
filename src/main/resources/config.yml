@@ -1,3 +1,5 @@
+# Caso não entenda oque cada configuração abaixo faz, não altere os valores.
+# Estas configurações estão ligadas diretamente a performance do plugin.
 settings:
   ticks-between-loops: 3
   millis-between-breaks: 1100

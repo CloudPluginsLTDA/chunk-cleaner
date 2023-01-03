@@ -5,7 +5,6 @@ import com.github.yungfasty.chunkcleaner.models.CleaningModel;
 
 import java.util.Iterator;
 import java.util.Set;
-import java.util.stream.Collectors;
 
 public class CleaningUpdater {
 
@@ -24,15 +23,5 @@ public class CleaningUpdater {
             if (cleaningModel.getY() == 1) iterator.remove();
 
         }
-
-        /*
-        for (CleaningModel cleaningModel : cleaningModelSet)
-            cleaningModel.tick(currentTimeMillis);
-
-        cleaningModelSet.removeIf(cleaningModel -> cleaningModel.getY() == 1);
-
-         */
-
     }
-
 }

@@ -1,4 +1,4 @@
-package com.github.yungfasty.chunkcleaner.managers;
+package com.github.yungfasty.chunkcleaner.manager;
 
 import com.github.yungfasty.chunkcleaner.models.CleaningModel;
 import com.github.yungfasty.chunkcleaner.utils.ItemBuilder;
@@ -21,7 +21,5 @@ public class CleaningManager {
 
         item = ItemBuilder.of(configuration.getConfigurationSection("item")).wrap();
         millisBetweenBreaks = configuration.getLong("settings.millis-between-breaks");
-
     }
-
 }

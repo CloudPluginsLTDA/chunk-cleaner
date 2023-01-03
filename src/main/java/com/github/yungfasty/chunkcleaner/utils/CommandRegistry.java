@@ -13,7 +13,5 @@ public class CommandRegistry {
         SimpleCommandMap simpleCommandMap = craftServer.getCommandMap();
 
         simpleCommandMap.register(customCommand.getName(), customCommand);
-
     }
-
 }

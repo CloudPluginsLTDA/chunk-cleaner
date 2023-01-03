@@ -16,8 +16,8 @@ public class CleaningModel {
 
     public void tick(long currentTimeMillis) {
 
-        if (nextMillis > currentTimeMillis || y == 1)
-            return;
+        if (nextMillis > currentTimeMillis
+                || y == 1) return;
 		
 		Block block;
 
@@ -49,7 +49,6 @@ public class CleaningModel {
                         block.getType() != Material.MOB_SPAWNER &&
                         block.getType() != Material.BEDROCK)
                     block.setType(Material.AIR);
-
             }
         }
 
@@ -57,7 +56,5 @@ public class CleaningModel {
         else size += 1;
 
         nextMillis = currentTimeMillis + CCleanerPlugin.getInstance().getCleaningManager().getMillisBetweenBreaks();
-
     }
-
 }
