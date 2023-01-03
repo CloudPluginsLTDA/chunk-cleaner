@@ -1,6 +1,6 @@
 package com.github.yungfasty.chunkcleaner.models;
 
-import com.github.yungfasty.chunkcleaner.CCleanerPlugin;
+import com.github.yungfasty.chunkcleaner.ChunkCleanerPlugin;
 import lombok.Builder;
 import lombok.Getter;
 import org.bukkit.Chunk;
@@ -16,8 +16,7 @@ public class CleaningModel {
 
     public void tick(long currentTimeMillis) {
 
-        if (nextMillis > currentTimeMillis
-                || y == 1) return;
+        if (nextMillis > currentTimeMillis || y == 1) return;
 		
 		Block block;
 
@@ -30,9 +29,7 @@ public class CleaningModel {
                 if (block.getType() != Material.CHEST &&
                         block.getType() != Material.TRAPPED_CHEST &&
                         block.getType() != Material.MOB_SPAWNER &&
-                        block.getType() != Material.BEDROCK)
-                    block.setType(Material.AIR);
-
+                        block.getType() != Material.BEDROCK) block.setType(Material.AIR);
             }
         }
 
@@ -47,14 +44,13 @@ public class CleaningModel {
                 if (block.getType() != Material.CHEST &&
                         block.getType() != Material.TRAPPED_CHEST &&
                         block.getType() != Material.MOB_SPAWNER &&
-                        block.getType() != Material.BEDROCK)
-                    block.setType(Material.AIR);
+                        block.getType() != Material.BEDROCK) block.setType(Material.AIR);
             }
         }
 
         if (size >= 16) size = 1;
         else size += 1;
 
-        nextMillis = currentTimeMillis + CCleanerPlugin.getInstance().getCleaningManager().getMillisBetweenBreaks();
+        nextMillis = currentTimeMillis + ChunkCleanerPlugin.getInstance().getCleaningManager().getMillisBetweenBreaks();
     }
 }

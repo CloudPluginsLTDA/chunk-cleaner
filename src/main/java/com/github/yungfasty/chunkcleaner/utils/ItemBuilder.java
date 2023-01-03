@@ -1,13 +1,11 @@
 package com.github.yungfasty.chunkcleaner.utils;
 
-import com.google.common.collect.Lists;
 import com.mojang.authlib.GameProfile;
 import com.mojang.authlib.properties.Property;
 import lombok.Getter;
 import lombok.Setter;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.lang3.reflect.FieldUtils;
-import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.enchantments.Enchantment;
@@ -16,10 +14,8 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.inventory.meta.SkullMeta;
 
-import java.lang.reflect.Field;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Objects;
 import java.util.UUID;
 import java.util.stream.Collectors;
 

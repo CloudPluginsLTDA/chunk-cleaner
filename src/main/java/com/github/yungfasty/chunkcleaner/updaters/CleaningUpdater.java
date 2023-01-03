@@ -1,6 +1,6 @@
 package com.github.yungfasty.chunkcleaner.updaters;
 
-import com.github.yungfasty.chunkcleaner.CCleanerPlugin;
+import com.github.yungfasty.chunkcleaner.ChunkCleanerPlugin;
 import com.github.yungfasty.chunkcleaner.models.CleaningModel;
 
 import java.util.Iterator;
@@ -10,7 +10,7 @@ public class CleaningUpdater {
 
     public static void init() {
 
-        Set<CleaningModel> cleaningModelSet = CCleanerPlugin.getInstance().getCleaningManager().getCleaningModelSet();
+        Set<CleaningModel> cleaningModelSet = ChunkCleanerPlugin.getInstance().getCleaningManager().getCleaningModelSet();
         long currentTimeMillis = System.currentTimeMillis();
         Iterator<CleaningModel> iterator = cleaningModelSet.iterator();
 
@@ -21,7 +21,6 @@ public class CleaningUpdater {
             cleaningModel.tick(currentTimeMillis);
 
             if (cleaningModel.getY() == 1) iterator.remove();
-
         }
     }
 }

@@ -30,7 +30,7 @@ public class PlayerInteractListener implements Listener {
 
         if (itemStack == null
                 || !event.getAction().name().toLowerCase().contains("right")
-                || !cleaningManager.getItem().isSimilar(itemStack)) return;
+                || !cleaningManager.getItemStack().isSimilar(itemStack)) return;
 
         event.setCancelled(true);
 
@@ -68,7 +68,6 @@ public class PlayerInteractListener implements Listener {
                         .y((int) location.getY())
                         .nextMillis(System.currentTimeMillis())
                         .size(2)
-                        .build()
-        );
+                        .build());
     }
 }

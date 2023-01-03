@@ -12,14 +12,14 @@ import java.util.Set;
 public class CleaningManager {
 
     @Getter private final Set<CleaningModel> cleaningModelSet;
-    @Getter private final ItemStack item;
+    @Getter private final ItemStack itemStack;
     @Getter private final long millisBetweenBreaks;
 
     public CleaningManager(FileConfiguration configuration) {
 
         cleaningModelSet = Sets.newHashSet();
 
-        item = ItemBuilder.of(configuration.getConfigurationSection("item")).wrap();
+        itemStack = ItemBuilder.of(configuration.getConfigurationSection("item")).wrap();
         millisBetweenBreaks = configuration.getLong("settings.millis-between-breaks");
     }
 }

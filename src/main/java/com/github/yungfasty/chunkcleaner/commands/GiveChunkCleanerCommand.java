@@ -1,6 +1,6 @@
 package com.github.yungfasty.chunkcleaner.commands;
 
-import com.github.yungfasty.chunkcleaner.CCleanerPlugin;
+import com.github.yungfasty.chunkcleaner.ChunkCleanerPlugin;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -9,11 +9,11 @@ import org.bukkit.inventory.ItemStack;
 
 import java.util.Collections;
 
-public class GiveCCCommand extends Command {
+public class GiveChunkCleanerCommand extends Command {
 
-    private final CCleanerPlugin plugin;
+    private final ChunkCleanerPlugin plugin;
 
-    public GiveCCCommand(CCleanerPlugin plugin) {
+    public GiveChunkCleanerCommand(ChunkCleanerPlugin plugin) {
         super("gcc");
 
         this.plugin = plugin;
@@ -47,7 +47,7 @@ public class GiveCCCommand extends Command {
             return true;
         }
 
-        ItemStack clone = plugin.getCleaningManager().getItem().clone();
+        ItemStack clone = plugin.getCleaningManager().getItemStack().clone();
 
         clone.setAmount(integer);
 
