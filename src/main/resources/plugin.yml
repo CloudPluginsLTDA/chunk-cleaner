@@ -1,4 +1,7 @@
-name: chunk-cleaner
+name: cloud-chunkcleaner
 version: 1.0.0
 author: akafasty
-main: com.github.yungfasty.chunkcleaner.CCleanerPlugin
+main: com.github.yungfasty.chunkcleaner.ChunkCleanerPlugin
+depend:
+  - Factions
+  - MassiveCore
