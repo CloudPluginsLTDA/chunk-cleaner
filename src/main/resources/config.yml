@@ -1,0 +1,12 @@
+settings:
+  ticks-between-loops: 3
+  millis-between-breaks: 1100
+
+item:
+  name: "&eLimpador de Chunk"
+  type: ENDER_PORTAL_FRAME
+  url: ""
+  glow: false
+  lore:
+    - "&7Ao colocar este item em uma chunk "
+    - "&7todos os blocos serão limpos."

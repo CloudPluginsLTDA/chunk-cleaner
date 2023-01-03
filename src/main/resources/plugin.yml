@@ -1,0 +1,4 @@
+name: chunk-cleaner
+version: 1.0.0
+author: akafasty
+main: com.github.yungfasty.chunkcleaner.CCleanerPlugin
